@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio | Cathrine Meyers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-gray-100 text-gray-800 font-sans">
+    <!-- Navbar -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+      <div
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <h1 class="text-xl font-bold">Cathrine Meyers</h1>
+        <nav class="space-x-6 text-sm">
+          <a href="#projects" class="hover:text-blue-600">Projects</a>
+          <a href="#contact" class="hover:text-blue-600">Contact</a>
+          <a
+            href="https://linkedin.com//in/cathrine-meyers-41483ba0"
+            target="_blank"
+            class="text-blue-600 font-medium hover:underline"
+            >LinkedIn</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section
+      class="relative text-center py-32 bg-cover bg-center"
+      style="
+        background-image: url('https://images.unsplash.com/photo-1556155092-490a1ba16284?auto=format&fit=crop&w=1950&q=80');
+      "
+    >
+      <div class="bg-black bg-opacity-50 absolute inset-0"></div>
+      <div class="relative z-10 text-white">
+        <h1 class="text-5xl font-bold mb-4">Hi, I'm Cathrine Meyers</h1>
+        <p class="text-2xl">
+          Aspiring Front-End Developer • Builder of Secure Scan Ai
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">My Projects</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project Cards (same as before) -->
+          <div
+            class="bg-gray-100 rounded-xl shadow-lg p-6 hover:shadow-2xl transition duration-300"
+          >
+            <h3 class="text-xl font-bold mb-2">Secure Scan Ai</h3>
+            <p class="text-gray-700 mb-4">
+              AI-powered safety platform to detect online predators in South
+              Africa.
+            </p>
+            <div class="flex flex-wrap gap-2 text-sm text-white">
+              <span class="bg-blue-600 px-2 py-1 rounded">HTML</span>
+              <span class="bg-green-600 px-2 py-1 rounded">JavaScript</span>
+              <span class="bg-purple-600 px-2 py-1 rounded">AI</span>
+            </div>
+            <a
+              href="https://github.com/Kate-90-maker/secure-scan-ai"
+              target="_blank"
+              class="inline-block mt-4 text-blue-600 hover:underline"
+              >View on GitHub</a
+            >
+          </div>
+
+          <div
+            class="bg-gray-100 rounded-xl shadow-lg p-6 hover:shadow-2xl transition duration-300"
+          >
+            <h3 class="text-xl font-bold mb-2">Portfolio Website</h3>
+            <p class="text-gray-700 mb-4">
+              Personal website to showcase skills, projects, and contact info.
+            </p>
+            <div class="flex flex-wrap gap-2 text-sm text-white">
+              <span class="bg-pink-600 px-2 py-1 rounded">Tailwind CSS</span>
+              <span class="bg-yellow-600 px-2 py-1 rounded">Responsive</span>
+            </div>
+            <a
+              href="https://github.com/Kate-90-maker/portfolio"
+              target="_blank"
+              class="inline-block mt-4 text-blue-600 hover:underline"
+              >View on GitHub</a
+            >
+          </div>
+
+          <div
+            class="bg-gray-100 rounded-xl shadow-lg p-6 hover:shadow-2xl transition duration-300"
+          >
+            <h3 class="text-xl font-bold mb-2">Upcoming Project</h3>
+            <p class="text-gray-700 mb-4">
+              More innovative tools and projects launching soon. Stay tuned!
+            </p>
+            <div class="flex flex-wrap gap-2 text-sm text-white">
+              <span class="bg-gray-600 px-2 py-1 rounded">Coming Soon</span>
+            </div>
+            <span class="inline-block mt-4 text-gray-400 cursor-not-allowed"
+              >Coming Soon</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-10">Get In Touch</h2>
+        <form
+          class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-md space-y-6"
+        >
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            class="w-full p-3 border border-gray-300 rounded"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            class="w-full p-3 border border-gray-300 rounded"
+            required
+          />
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Your Message"
+            class="w-full p-3 border border-gray-300 rounded"
+            required
+          ></textarea>
+          <button
+            type="submit"
+            class="w-full bg-blue-600 text-white p-3 rounded hover:bg-blue-700 transition"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 bg-gray-900 text-white">
+      <p>© 2025 Cathrine Meyers. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
